@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #1E1E1E;
+    color: white;
+}
+
+.study-timetable {
+    width: 100%;
+    max-width: 1440px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #161616; /* Background color for the whole timetable */
+    padding: 20px;
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+/* Header Row & Time Rows */
+.header-row, .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Added for better flexibility */
+}
+
+/* Header Styles */
+.header-cell {
+    flex: 1;
+    text-align: center;
+    background: #AA1E1E;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    border: 1px solid #000000;
+}
+
+/* Time Column Styles */
+.time-cell {
+    width: 150px;
+    text-align: center;
+    background: #AA1E1E;
+    padding: 10px;
+    font-weight: bold;
+    border: 1px solid #000000;
+}
+
+/* Cell Styles */
+.cell {
+    flex: 1;
+    border: 1px solid #000000;
+}
+
+.cell input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.cell input::placeholder {
+    color: #777;
+}
+
+/* Alternating Column Background Colors (Black & Gray) */
+.study-timetable .row .cell:nth-child(odd) {
+    background-color: #030303; /* Black */
+}
+
+.study-timetable .row .cell:nth-child(even) {
+    background-color: #060606; /* Gray */
+}
+
+/* Responsive Styles */
+
+/* Tablets (Max width: 768px) */
+@media (max-width: 768px) {
+    .study-timetable {
+        margin: 10px auto;
+    }
+
+    .time-cell, .header-cell {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .cell input {
+        font-size: 0.85rem;
+        padding: 4px;
+    }
+
+    /* Adjust the layout for smaller screens */
+    .header-row, .row {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: stretch; /* Make cells fill the available width */
+    }
+
+    .time-cell {
+        width: 100%;
+        text-align: left;
+        padding-left: 10px;
+    }
+}
+
+/* Mobile devices (Max width: 480px) */
+@media (max-width: 480px) {
+    .study-timetable {
+        margin: 5px auto;
+    }
+
+    .time-cell, .header-cell {
+        font-size: 0.8rem;
+        padding: 6px;
+    }
+
+    .cell input {
+        font-size: 0.75rem;
+        padding: 3px;
+    }
+
+    /* Further adjustments for very small screens */
+    .header-row, .row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .time-cell {
+        width: 100%;
+        text-align: left;
+        padding-left: 10px;
+    }
+}
+    
