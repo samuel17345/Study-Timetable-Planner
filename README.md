@@ -15,7 +15,7 @@ The Study Timetable Planner is a simple application designed to help you organiz
 - **Node.js**: JavaScript runtime for the backend, enabling the app to generate and download the timetable as a PDF.
 - **Git Bash**: Used for version control and managing the project repository.
 
-
+## Summary
 * Input Study Activities: Select a day of the week (Monday to Sunday) and enter your study activities with their respective time slots.
 * Download Timetable: Once you’ve input all your activities, click the download button to get your study timetable as a PDF.
 
