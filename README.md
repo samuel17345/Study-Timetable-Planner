@@ -1,33 +1,33 @@
 # Study Timetable Planner
 
-The Study Timetable Planner is an application designed to help students organize and manage their study schedules efficiently. With this planner, users can create and track their study tasks, set deadlines, and manage their time effectively to achieve academic success.
+The Study Timetable Planner is a simple application designed to help you organize your study activities by day and time. After inputting your study activities, you can download your timetable as a PDF.
 
 ## Features
 
-- **Create Study Sessions**: Plan study sessions by adding subjects, topics, and time slots.
-- **Task Management**: Add specific tasks to study sessions and mark them as complete when finished.
-- **Deadline Tracker**: Set and track important deadlines for assignments or exams.
-- **Responsive Design**: Access the planner across devices, ensuring you can manage your schedule anywhere.
-- **Customizable Layout**: Tailor the layout to suit your study needs and preferences.
-
-## How to Use
-
-1. **Create a Study Session**: Click on "Add Session" and enter the details of your study session (subject, topic, time).
-2. **Add Tasks**: Under each session, create specific tasks that you need to complete.
-3. **Set Deadlines**: Add deadlines to tasks to track important due dates.
-4. **Track Progress**: Mark tasks as complete and check off study sessions as you progress.
-5. **View Schedule**: Check your upcoming study sessions and review your plan for the week.
+- **Organize by Days of the Week**: Plan your study activities across different days (Monday to Sunday).
+- **Time Slot Management**: Assign your study activities acrooss different times.
+- **Download as PDF**: After adding your activities, download your timetable as a PDF.
 
 ## Technologies Used
 
-- React.js
-- Local Storage (for saving user data)
-- CSS for responsive layout
+- **Figma**: Used for designing the user interface and overall layout of the app.
+- **React**: The front-end JavaScript library used to build the user interface.
+- **Node.js**: JavaScript runtime for the backend, enabling the app to generate and download the timetable as a PDF.
+- **Git Bash**: Used for version control and managing the project repository.
 
-## Contributing
+## How to Use
 
-Feel free to fork the repository, make changes, and submit a pull request. Contributions are always welcome!
+1. **Clone the Repository**: First, clone the repository to your local machine using Git Bash.
+  -  git clone <repository-url>
+   
+2. Install Dependencies: Navigate to the project directory and install the necessary dependencies.
+- cd <project-directory>
+- npm install
 
-## License
+3. Start the Application: Run the application locally by starting the development server.
+- npm start
+  
+* Input Study Activities: Select a day of the week (Monday to Sunday) and enter your study activities with their respective time slots.
+* Download Timetable: Once you’ve input all your activities, click the download button to get your study timetable as a PDF.
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This `README.md` now includes the relevant tools (Figma, React, Node.js, and Git Bash) and focuses on the core features of the 
